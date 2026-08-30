@@ -40,7 +40,7 @@
   <h2>What the app stores</h2>
   <p>Only what you enter or import:</p>
   <ul>
-    <li>The names of the people you are tracking prescriptions for, and optionally a date of birth, a Medicare number and free-text notes</li>
+    <li>The names of the people you are tracking prescriptions for, their initials, and optionally free-text notes</li>
     <li>Prescription details: medication name, dosage, quantity, prescriber, pharmacy, dates, the number of repeats and how many have been used</li>
     <li>The prescription link and token from an eScript SMS, when you share one into the app</li>
     <li>Notes you attach to a prescription, and a history of changes you have made</li>
@@ -49,8 +49,8 @@
   <h2>Where it is stored</h2>
   <div class="card">
     <p>All of it is written to the app's private storage area on your device. That area is only accessible to this app and is covered by the encryption iOS applies while your phone is locked. Nothing is copied to a server, a cloud service or a backup controlled by me.</p>
-    <p><strong>Medicare numbers are treated differently.</strong> They are stored in the iOS keychain rather than alongside the rest of the data, which keeps them encrypted by the system independently of the app's own files. They are never written into the app's ordinary storage.</p>
-    <p>If you back your phone up to iCloud or a computer, the app's data may be included in that backup, under Apple's terms and your own settings rather than mine. A backup you export yourself from within the app is a plain file and does include Medicare numbers, so keep it somewhere you are comfortable with.</p>
+    <p><strong>The app does not ask for a Medicare number or a date of birth.</strong> Earlier versions did, and held the Medicare number in the iOS keychain. Those fields have been removed, and any number stored by an earlier version is deleted from the keychain the next time the app opens.</p>
+    <p>If you back your phone up to iCloud or a computer, the app's data may be included in that backup, under Apple's terms and your own settings rather than mine. A backup you export yourself from within the app is a plain file, so keep it somewhere you are comfortable with.</p>
   </div>
 
   <h2>What the app does not do</h2>
